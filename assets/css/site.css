@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Anek Devanagari", sans-serif;
+  margin-left: 2rem;
+  width: 100%;
+  min-width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 600px;
+}
+
+.assignmentArea {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 600px;
+  border: 2px solid black;
+  border-radius: 0pc 10px 20px 10px;
+  overflow: hidden;
+}
+
+button {
+  padding: 5px 20px;
+  color: white;
+  background-color: grey;
+  border-radius: 0.5rem;
+}

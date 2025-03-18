@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script src="assets/js/events.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <h1>Events</h1>
+
+        <p>Events er interaktive handlinger, der udløses af brugeren eller systemet i en
+            webapplikation. De kan
+            omfatte handlinger som at klikke på en knap, hover over et element, indlæse siden og mange andre. Disse
+            begivenheder kan
+            reageres på ved at tildele en funktion, der udfører specifikke handlinger, når begivenheden udløses.
+            Dette gøres ved at tildele en eventListner til den specifikke event man vil følge. <br> En eventlistner er
+            som
+            regel kombineret med en anonymus function, til at håndtere eventet.
+        </p>
+
+        <br><br>
+
+
+
+
+
+    </header>
+
+
+
+    <section class="assignmentArea">
+        <h3>Opgave 1</h3>
+        <p>Tilføj en event listner med en anomymus function eller en arrow function der lytter efter click, til hver
+            knap. <br>
+            Denne funktion skal enten lægge 1 til eller trække 1 fra, den globale variabel myButtonValue. <br>
+            derefter skal den sende myButtonValue til funktionen showResult sammen med dom elementet buttonResult.<br>
+        </p>
+        <pre>
+            <code>
+                showResult(myButtonValue,buttonResult);
+        </code>
+        </pre>
+
+        <p>læs mere om funktionen showResult nederst i filen events.js </p>
+        <br>
+        <h3>elementer til opgaven</h3>
+        <br>
+        <h4 id="buttonResult">klik på en af knapperne</h4>
+        <button id="addButton">Plus</button>
+        <button id="subtractButton">minus</button>
+        <br><br>
+    </section>
+
+
+    <section class="assignmentArea">
+        <h3>Opgave 2</h3>
+        <p>Tilføj en event listner med en anomymus function eller en arrow function der lytter efter click, til knappen
+            kast. <br>
+            Denne funktion skal kalde funktionen getRandomNumber med 1 og 6. og gemme resultatet i en variabel der
+            hedder diceRoll <br>
+            Derefter skal den sende diceRoll sammen med DOM elementet diceResult til funktionen showResult.<br>
+        </p>
+        <pre>
+                    <code>
+                        // eksempler
+                        let diceRoll = getRandomNumber(1, 6);
+
+                        showResult(myButtonValue,buttonResult);
+                </code>
+                </pre>
+
+        <p>læs mere om funktionerne getRandomNumber og showResult nederst i filen events.js </p>
+        <br>
+        <h3>elementer til opgaven</h3>
+        <br>
+        <h2>kast terning</h2>
+        <h3 id="diceResult">resultat</h3>
+        <button id="rollDiceOne">kast</button>
+
+    </section>
+
+
+    <section class="assignmentArea">
+        <h3>Opgave 3</h3>
+        <p>Tilføj en event listner med en anomymus function eller en arrow function der lytter efter keyup event, til
+            input feltet her under. <br>
+            Denne funktion skal kalde showResult med værdien af myLiveText og myLiveTextResult<br>
+            <br>
+        </p>
+        <pre>
+                    <code>
+                        // eksempler
+                        showResult(myLiveText.value, myLiveTextResult);
+                </code>
+                </pre>
+
+        <p>læs mere om funktionen showResult nederst i filen events.js </p>
+        <br>
+        <h3>elementer til opgaven</h3>
+        <br>
+
+
+        <h2>tast i feltet</h2>
+        <h3 id="tasteResult">taste resultat</h3>
+        <input type="text" id="myLiveText" name="tastefelt" placeholder="tast noget her"><br>
+
+    </section>
+    <footer>
+        <nav>
+            <a href="index.html">back</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
